@@ -26,7 +26,7 @@ app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 
 app.use((req, res, next) => {
-	const error = new Error('Blya! Net takova tut');
+	const error = new Error('There is no content!');
 	error.status = 404;
 	next(error);
 });
